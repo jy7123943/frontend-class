@@ -1,0 +1,2 @@
+# frontend-class
+class documents
