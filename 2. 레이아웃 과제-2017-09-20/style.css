@@ -36,6 +36,7 @@ ul {
 	width: auto;
 	min-height: 500px;
 	background-color: #ffdfe5;
+
 }
 #body {
 	width: 800px;
@@ -44,9 +45,9 @@ ul {
 	min-height: 500px;
 }
 #sidebar {
-	width: 200px;
-	background-color: #ffdfe5;
+	width: 180px;
 	float: left;
+	margin-left: 4px;
 	height: 300px;
 }
 #content:after {
@@ -70,7 +71,7 @@ ul {
 	text-align: center;
 	font: bold 30px/60px "나눔고딕", "Helvetica";
 	line-height: 160px;
-	color: #032149;
+	color: #fff;
 	background-color: pink;
 }
 #header ul li {
@@ -86,8 +87,12 @@ ul {
 	border: 2px solid #abe2f7;
 	height: 100%;
 	color: #fff;
+	background-color: #032149;
 }
-
+#header ul li a:hover {
+	background-color: #fff;
+	color: #032149;
+}
 /* 본문 갤러리 영역*/
 
 #gallery {
@@ -103,6 +108,9 @@ ul {
 	width: auto;
 	padding: 10px;
 }
+#gallery li a:hover {
+	background-color: #ffdfe5;
+}
 #gallery li a span {
 	display: block;
 	width: auto;
@@ -117,7 +125,10 @@ ul {
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 15px;
-
+	font-size: 13px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 /* 사이드 바 */
@@ -126,19 +137,32 @@ ul {
 	width: 100%;
 	border: 0;
 	background-color: #abe2f7;
+	position: relative;
+	top: 30px;
 }
 #sidebar fieldset div {
-	padding: 15px 10px;
+	padding: 8px 10px;
 }
 #sidebar fieldset div label {
 	font-weight: bold;
 	color: #fff;
 	font-size: 18px;
-	text-shadow: 0 3px 2px #222;
+	text-shadow: 0 3px 2px #032149;
 }
+
 #sidebar fieldset div input {
-	margin-top: 15px;
+	margin-top: 10px;
+	display: block;
+	height: 28px;
 }
+#sidebar fieldset button {
+	width: 45%;
+	height: 30px;
+	background-color: #032149;
+	color: #ffdfe5;
+	font: bold 15px "고딕";
+}
+
 
 /* 하단영역 */
 
