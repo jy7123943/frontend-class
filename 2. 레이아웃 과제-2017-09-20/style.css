@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/* 공통 설정 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html body {
+	height: 100%;
+	color: #032149;
+}
+ul {
+	list-style: none;
+}
+#container ul a {
+	text-decoration: none;
+	color: #032149;
+}
+
+/* 전체 박스: 넓이= 800px, 가운데 정렬  */
+/* 상단, 메뉴: 높이= 200px */
+/* 내용: 높이=min 500px */
+/* 하단: 높이= 80px */
+
+#container {
+	width: 1000px;
+	margin: auto;
+}
+#header {
+	width: auto;
+	height: 200px;
+	background-color: pink;
+}
+#content {
+	width: auto;
+	min-height: 500px;
+	background-color: #ffdfe5;
+}
+#body {
+	width: 800px;
+	background-color: #fff;
+	float: left;
+	min-height: 500px;
+}
+#sidebar {
+	width: 200px;
+	background-color: #ffdfe5;
+	float: left;
+	height: 300px;
+}
+#content:after {
+	content: "";
+	display: block;
+	float: none;
+	clear: both;
+}
+
+#footer {
+	width: auto;
+	height: 80px;
+	background-color: pink;
+}
+
+/* 상단 제목, 메뉴 영역 설정*/
+
+#header h1 {
+	width: auto;
+	height: 160px;
+	text-align: center;
+	font: bold 30px/60px "나눔고딕", "Helvetica";
+	line-height: 160px;
+	color: #032149;
+	background-color: pink;
+}
+#header ul li {
+	display: inline-block;
+	width: 20%;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	font-weight: bold;
+}
+#header ul li a {
+	display: block;
+	border: 2px solid #abe2f7;
+	height: 100%;
+	color: #fff;
+}
+
+/* 본문 갤러리 영역*/
+
+#gallery {
+	width:auto;
+	padding-top: 10px;
+}
+#gallery li {
+	width: 25%;
+	float: left;
+}
+#gallery li a {
+	display: block;
+	width: auto;
+	padding: 10px;
+}
+#gallery li a span {
+	display: block;
+	width: auto;
+}
+#gallery .thumb img {
+	width: 100%;
+}
+#gallery .text {
+	width: 90%;
+	height: 30px;
+	margin: auto;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 15px;
+
+}
+
+/* 사이드 바 */
+
+#sidebar fieldset {
+	width: 100%;
+	border: 0;
+	background-color: #abe2f7;
+}
+#sidebar fieldset div {
+	padding: 15px 10px;
+}
+#sidebar fieldset div label {
+	font-weight: bold;
+	color: #fff;
+	font-size: 18px;
+	text-shadow: 0 3px 2px #222;
+}
+#sidebar fieldset div input {
+	margin-top: 15px;
+}
+
+/* 하단영역 */
+
+#footer address {
+	border-top: 2px solid #abe2f7;
+	text-align: center;
+	line-height: 80px;
+}
