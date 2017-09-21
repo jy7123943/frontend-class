@@ -1,0 +1,161 @@
+header {
+    background-color: #ffdfe5;
+    width: auto;
+    height:200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.first_title {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "나눔고딕", "고딕", "Helvetica";
+    line-height: 200px;
+    color: #000033;
+}
+
+.first_title>a:link,
+.first_title>a:visited {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "나눔고딕", "고딕", "Helvetica";
+    color: #000033;
+    text-decoration: none;
+}
+
+.first_title>a:hover {
+    color: #994466;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "돋움", "Helvetica";
+}
+
+.headline {
+    text-align: center;
+    color: #99f;
+}
+a.exp {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+}
+
+div.product_menu {
+    text-align: right;
+    margin-top: 20px;
+    margin-left: -100px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+div.product_menu:hover {
+    margin-left: 0;
+}
+div.product_menu>a {
+    font: bold 18px "굴림";
+    line-height: 40px;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 40px;
+}
+
+div.product_menu>a:nth-child(odd) {
+    background: #994466;
+    color: #ffffff;
+}
+
+div.product_menu a:nth-child(2n) {
+    background: #000033;
+    color: #ffffff;
+}
+
+ul.join_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.join_menu li:nth-child(odd) {
+    background: #994466;
+    color: #ffffff;
+}
+
+ul.join_menu li:nth-child(2n) {
+    background: #000033;
+    color: #ffffff;
+}
+
+
+ul.join_menu>li {
+    width: 20%; display: inline-block; text-align: center;
+}
+
+ul.join_menu a {
+    display: block;
+    font: bold 18px "굴림"; 
+    padding: 10px 0px;
+    line-height: 40px;
+    width: auto;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+ul.join_menu a:link,
+ul.join_menu a:visited {
+    color: #fff;
+}
+
+ul.join_menu a:hover {
+    background-color: #99f;
+    font-color: #fff;
+}
+
+a.exp {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+span.sub, span.price {
+    text-align: center;
+    display: block;
+    color: #222;
+}
+
+
+
+div#bottom {margin-top: 200px;
+
+}
+
+
+table {
+    background: #99f;
+    color: #ffffff;
+}
+
+table a:link,
+table a:active,
+table a:hover,
+table a:visited {
+    text-decoration: none;
+    color: #222222;
+}
+
+
+
+.member_login {
+    font-family: "궁서";
+    color: #999999;
+}
+
+fieldset.login input#user_id,
+fieldset.login input#user_pw {
+    border: 1px solid #f9f;
+}

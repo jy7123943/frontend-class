@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>practice-layout</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html body {
+			height: 100%;
+		}
+		#container {
+			width: 800px;
+			margin: auto;
+		}
+		#header {
+			background-color: #a4d3ee;
+			width: auto;
+			height: 100px;
+		}
+		#content {
+			background-color: #6cccf2;
+			width: auto;
+			min-height: 600px;
+		}
+		#footer {
+			background-color: #f08c78;
+			width: auto;
+			height: 80px;
+		}
+		#body {
+		background-color: #6cccf2;
+		width: 640px;
+		float: left;
+		min-height: 600px;
+		}
+		
+		#sidebar {
+			background-color: #6f8197;
+			width: 160px;
+			float: left;
+			min-height: 600px;
+		}
+
+		.clear:after {
+			content: "";
+			float: none;
+			display: block;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			상단영역
+		</div>
+		<div id="content" class="clear">
+			<div id="sidebar">
+				사이드바
+			</div>
+			<div id="body">
+				본문
+			</div>
+		</div>
+		<div id="footer">
+			하단영역
+		</div>
+	</div>
+</body>
+</html>

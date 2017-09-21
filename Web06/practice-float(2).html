@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice-float(2)</title>
+	<style type="text/css">
+		div.parent {
+			border:3px dotted #222;
+		}
+		#box1 {
+			border: 3px dotted #ff0;
+			width: 300px;
+			float: right;
+		}
+		#box1>img {
+			width: 100%;
+		}
+		div.parent:after {
+			content: "";
+			display: block;
+			clear: both;
+			float: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div id="box1">
+			<img src="img/title.jpg" />
+		</div>
+		<p>
+		웹 표준은 월드 와이드 웹의 측면을 서술하고 정의하는 
+		공식 표준이나 다른 기술 규격을 가리키는 일반적인 용어이다. 
+		최근에 이 용어는 웹 사이트를 작성하는 데 중요도가 높아지고 있으며 
+		웹 디자인, 개발과 관계가 있다.
+		</p>
+	</div>
+</body>
+</html>

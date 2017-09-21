@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Join</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<header><h1 class="first_title" align="center"><a href="practice_0.html">J's Market</a></h1></header>
+	<form name="form1" action="practice_0.html" method="post" enctype="multipart/form-data">
+		<fieldset class="n_info">
+		<legend>필수정보 입력</legend>
+
+		<div class="name">
+			<label for="user_name">이름</label>
+			<input type="text" name='user_name' id="user_name" placeholder="한글 이름을 입력하세요" maxlength="5" />
+		</div>
+		<div class="gender">
+			<input type="radio" name="user_gender" id="gender_m" />
+			<label for="gender_m">남자</label>
+			<input type="radio" name="user_gender" id="gender_f" />
+			<label for="gender_f">여자</label>
+		</div>
+		<div class="email">
+			<label for="user_mail">이메일</label>
+			<input type="email" name="user_mail" id="user_mail" placeholder="이메일을 입력하세요" />
+		</div>
+		<div class="age">
+			<label for="user_age">나이</label>
+			<input type="number" name="user_age" id="user_age" min="10" max="90" step="1" />
+		</div>
+		<div class="birthday">
+			<label for="user_bday">생일</label>
+			<input type="date" name="user_bday" id="user_bday" value="1991-01-28" />
+		</div>
+		<div class="range1">
+			<label for="user_range">선호 가격</label>
+			<input type="range" name="user_range" id="user_range" min="10000" max="50000" step="1000" value="25000" />
+		</div>
+		</fieldset>
+		<fieldset class="un_info">
+			<legend>사이트를 알게 된 경로</legend>
+			<div class="interest">
+				<input type="checkbox" name="interest" id="interest1" />
+				<label for="interest1">인터넷</label>
+				<input type="checkbox" name="interest" id="interest2" />
+				<label for="interest2">전단지</label>
+				<input type="checkbox" name="interest" id="interest3" />
+				<label for="interest3">TV광고</label>
+				<br>
+				<label for="etc_memo">기타 경로</label>
+				<textarea name="etc_memo" id="etc_memo" maxlength="50" placeholder="기타 경로"></textarea>
+			</div>
+		</fieldset>
+
+		<div class="bottom">
+			<input type="submit" name="info_submit" id="info_submit" value="가입하기" />
+			<input type="reset" name="info_reset" id="info_reset" value="다시작성" />
+		</div>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>연습</title>
+    <style type="text/css">
+    	.add_info {background: #999999;}
+    	h4.title {color: #000099;}
+    	input {border: 1px solid #ffff00;}
+    	input[type='button'], input[type='radio'], input[type='checkbox'], input[type='file'], input[type='submit'], input[type='reset'] {border: 0px;}
+    </style>
+</head>
+
+<body>
+	<form name='form1' method='get' action='result.html' enctype="multipart/form-data">
+		<fieldset>
+			<legend>기본 정보 입력</legend>
+				<div>
+					<label for='user_id'>아이디</label>
+					<input type='text' name='user_id' id='user_id' maxlength='10' placeholder='아이디를 입력하세요' />
+					<input type='button' value='아이디 중복검사' />
+				</div>
+				<div>
+					<label for='user_name'>이름</label>
+					<input type='text' name='user_name' id='user_name' maxlength="8" placeholder="이름을 입력하세요" />
+				</div>
+				<div>
+					<label for='user_pw'>비밀번호</label>
+					<input type='password' name='user_pw' id='user_pw' maxlength="20" placeholder="비밀번호를 입력하세요">
+				</div>
+				<div>
+					<label for='memo'>자기소개</label>
+					<textarea name='memo' id='memo' maxlength="200" placeholder='200자 내외로 간단한 소개를 입력하세요'></textarea>
+				</div>
+		</fieldset>
+		<fieldset class="add_info">
+			<legend>부가 정보 선택</legend>
+			<div>
+				<h4 class="title">취미 선택</h4>
+				<input type='checkbox' name='hobby' id='hobby' value='축구' checked />
+				<label for='hobby'>축구</label>
+				<input type='checkbox' name='hobby' id='hobby2' value='농구' />
+				<label for='hobby2'>농구</label>
+				<input type='checkbox' name='hobby' id='hobby3' value='야구' />
+				<label for='hobby3'>야구</label>
+			</div>
+			<div>
+				<h4 class="title">성별 선택</h4>
+				<input type='radio' name='gender' id='gender_m' value='남자' />
+				<label for='gender_m'>남자</label>
+				<input type='radio' name='gender' id='gender_f' value='여자' checked />
+				<label for='gender_f'>여자</label>
+			</div>
+			<div>
+				<h4 class="title">이동통신사 선택</h4>
+				<select name='telecom' id='telecom'>
+					<option>---선택하세요---</option>
+					<option value='KT'>KT</option>
+					<option value='skt'>SK telecom</option>
+					<option value='lgu+'>LG U+</option>
+				</select>
+			</div>
+			<div>
+				<h4 class="title">스마트폰 운영체제 선택</h4>
+				<select name='smartphone' id='smartphone' multiple>
+					<option>선택하세요</option>
+					<option value='android'>안드로이드</option>
+					<option value='ios'>iOS</option>
+					<option value='window'>윈도우</option>
+				</select>
+			</div>
+			<div>
+				<h4 class="title">파일첨부</h4>
+				<label for='photo'>사진선택</label>
+				<input type='file' name='photo' id='photo' />
+			</div>
+		</fieldset>
+
+		<div>
+			<input type='submit' value='작성완료' />
+			<input type='reset' value='다시작성' />
+			<input type='image' value='전송' src='ok.png' />
+		</div>
+
+	</form>
+</body>
+</html>
