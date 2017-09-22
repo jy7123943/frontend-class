@@ -161,6 +161,8 @@ ul {
 	background-color: #032149;
 	color: #ffdfe5;
 	font: bold 15px "고딕";
+	position: relative;
+	left: 5px;
 }
 
 
